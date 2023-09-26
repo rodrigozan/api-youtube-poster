@@ -15,8 +15,8 @@
     "git_user": "git config user.name 'Rodrigo Zan'",
     "git_email": "git config user.email 'rodzandonadi@gmail.com'",
     "git_add": "git add .",
-    "git_commit": "git commit -m 'Created initial structure'",
-    "git_push": "npm run add && npm run commit && git push origin master"
+    "git_commit": "git commit -m 'Updated pakcage.json'",
+    "git_push": "git push origin master"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

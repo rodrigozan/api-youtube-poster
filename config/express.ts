@@ -1,6 +1,7 @@
 import express, { Application } from 'express';
-import bodyParser from 'body-parser';
 import cors from 'cors';
+
+import routes from '../src/routes';
 
 class App {
   public app: Application;
@@ -11,11 +12,11 @@ class App {
   }
 
   private config(): void {
-    this.app.use(bodyParser.json());
-    this.app.use(bodyParser.urlencoded({ extended: false }));
+    this.app.use(express.json());
+    this.app.use(express.urlencoded({ extended: false }));
     this.app.use(cors());
 
-    //this.app.use('/api', routes)
+    this.app.use('/api', routes)
 
     this.app.use((req, res) => {
       res.status(404).json({ message: 'Rota não encontrada' });

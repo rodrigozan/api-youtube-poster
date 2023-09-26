@@ -5,5 +5,37 @@
   "main": "server.js",
   "repository": "https://github.com/rodrigozan/api-youtube-poster.git",
   "author": "Rodrigo Zan",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "api_folders": "mkdir src && mkdir src/controllers && mkdir src/models && mkdir src/services && mkdir config && mkdir database && mkdir utils",
+    "api_files_config": "touch config/express.js && touch database/mongodb.js && touch server.js && touch .env.local && touch .env.example && touch .gitignore && touch src/routes.js",
+    "api_files_users": "touch src/controllers/users.controller.js && touch src/services/user.service.js && touch src/models/users.model.js",
+    "api_dependencies": "yarn add express mongoose dotenv jsonwebtoken cors bcryptjs",
+    "api_dev_dependencies": "yarn add -D @types/express @types/mongoose @types/dotenv @types/bcrypt @types/jsonwebtoken @types/cors @types/bcryptjs nodemon ts-node typescript",
+    "git_user": "git config user.name 'Rodrigo Zan'",
+    "git_email": "git config user.email 'rodzandonadi@gmail.com'",
+    "git_add": "git add .",
+    "git_commit": "git commit -m 'Created initial structure'",
+    "git_push": "npm run add && npm run commit && git push origin master"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/bcryptjs": "^2.4.4",
+    "@types/cors": "^2.8.14",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.18",
+    "@types/jsonwebtoken": "^9.0.3",
+    "@types/mongoose": "^5.11.97",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  }
 }

@@ -15,7 +15,7 @@
     "git_user": "git config user.name 'Rodrigo Zan'",
     "git_email": "git config user.email 'rodzandonadi@gmail.com'",
     "git_add": "git add .",
-    "git_commit": "git commit -m 'Configureted express and server of application'",
+    "git_commit": "git commit -m 'Created CRUD of users'",
     "git_push": "git push origin master",
     "start:dev": "PORT=3600 nodemon --exec ts-node server.ts"
   },

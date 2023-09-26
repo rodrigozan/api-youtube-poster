@@ -1,0 +1,9 @@
+{
+  "name": "api-youtube-poster",
+  "version": "1.0.0",
+  "description": "A API for API YouTube Poster Application",
+  "main": "server.js",
+  "repository": "https://github.com/rodrigozan/api-youtube-poster.git",
+  "author": "Rodrigo Zan",
+  "license": "MIT"
+}
